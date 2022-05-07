@@ -22,11 +22,15 @@ public class MarkdownParse {
             continue;
             }
             int closeBracket = markdown.indexOf("]",openBracket);
+           if(closeBracket==-1){
+               break;
+           }
             int openParen = markdown.indexOf("(",closeBracket);
             if(openParen==-1){
                 break;
             }
             int closeParen = markdown.indexOf(")",openBracket);
+            
            
             toReturn.add(markdown.substring(openParen + 1, closeParen));
             currentIndex = closeParen + 1;
