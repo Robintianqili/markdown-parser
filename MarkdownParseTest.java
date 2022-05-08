@@ -3,7 +3,7 @@ import org.junit.*;
 public class MarkdownParseTest {
 
     @Test
-    public void () {
+    public void test () {
         assertEquals(2, 1 + 1);
     }
 
